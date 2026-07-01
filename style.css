@@ -515,7 +515,6 @@ section{
     );
     position: relative;
     overflow: hidden;
-    filter: blur(0.6px);
 }
 /* .hero-after::before{
 
