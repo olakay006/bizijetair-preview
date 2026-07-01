@@ -30,20 +30,28 @@ body{
         NAVBAR
 ==========================*/
 
-.bizijet-navbar{
-
-    background:rgba(255,255,255,.88);
+.navbar{
+    background: linear-gradient(
+        135deg,
+        #5B2BE0 0%,
+        #2F6DFF 45%,
+        #22A8FF 100%
+    );
 
     backdrop-filter:blur(16px);
 
     border-bottom:1px solid rgba(0,0,0,.05);
 
-    padding:18px 0;
+    padding:2px 0;
 
     transition:.35s;
 
     z-index:9999;
 
+}
+.navbar.scrolled {
+    background:rgba(255,255,255,.88);
+    box-shadow: 0 4px 20px rgba(0,0,0,.08);
 }
 
 /*=========================
@@ -52,7 +60,7 @@ body{
 
 .navbar-brand img{
 
-    height:55px;
+    width: 100px;
 
 }
 
@@ -172,7 +180,7 @@ body{
 
     font-size:2rem;
 
-    color:#0d6efd;
+    color:#5B2BE0;
 
 }
 
@@ -302,7 +310,7 @@ section{
 
     padding:10px 20px;
 
-    background:var(--primary);
+    background: #6D3EF5;
 
     color:var(--white);
 
@@ -316,7 +324,7 @@ section{
 
 .btn-primary:hover{
 
-    background:var(--secondary);
+    background: #5A2FE0;
 
     transform:translateY(-3px);
 
@@ -332,9 +340,10 @@ section{
 
     padding:10px 20px;
 
-    border:2px solid white;
+    border:2px solid rgba(255, 255, 255, .85);
+    background: rgba(255, 255, 255, .12);
 
-    color:white;
+    color:whitesmoke;
 
     border-radius:50px;
 
@@ -360,7 +369,7 @@ section{
 
     max-height:100vh;
 
-    background:url("images/hero.png") center/cover no-repeat;
+    background:url("images/image.png") center/cover no-repeat;
 
     position:relative;
 
@@ -378,9 +387,11 @@ section{
 
     background:linear-gradient(
         90deg,
-        rgba(3,15,33,.88),
-        rgba(3,15,33,.45)
+        rgba(72, 41, 173, .75) 0%,
+        rgba(33, 110, 255, .45) 45%,
+        rgba(255,255,255, .05) 100%
     );
+    /* background: rgba(0,0,0, 0.2); */
 
 }
 
@@ -412,7 +423,7 @@ section{
 
     border-radius:50px;
 
-    color:white;
+    color: #E5D9FF;
 
     margin-bottom:28px;
 
@@ -436,7 +447,7 @@ section{
 
 .hero p{
 
-    color:#d9d9d9;
+    color: rgba(255, 255, 255, .92);
 
     max-width:600px;
 
@@ -495,6 +506,34 @@ section{
     font-size:1rem;
 
 }
+.hero-after {
+    background: linear-gradient(
+        135deg,
+        #5B2BE0 0%,
+        #2F6DFF 45%,
+        #22A8FF 100%
+    );
+    position: relative;
+    overflow: hidden;
+    filter: blur(0.6px);
+}
+/* .hero-after::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:1px;
+
+    background:rgba(255,255,255,.45);
+
+} */
 
 /*=====================================
         RESPONSIVE
@@ -1885,7 +1924,7 @@ ABOUT US PAGE
 
 }
 
-.hero-overlay{
+/* .hero-overlay{
 
     position:absolute;
 
@@ -1896,7 +1935,7 @@ ABOUT US PAGE
         rgba(4,17,32,.65)
     );
 
-}
+} */
 
 .about-hero .container{
 
