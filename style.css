@@ -5816,6 +5816,55 @@ CONTACT PAGE
         CONTACT OVERVIEW
 ======================================*/
 
+.contact-hero{
+
+    position:relative;
+
+    min-height:55vh;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background: linear-gradient(
+        90deg,rgba(0,32,91,.95) 0%, rgba(0,52,130,.88) 35%, rgba(0,52,130,.15) 70%),
+        url("images/contact-hero.png");
+    background-size:cover;
+
+    background-position:center right;
+
+    background-repeat:no-repeat;
+    color: #fff;
+
+}
+.contact-hero h1{
+
+    font-size:2.5rem;
+
+    font-weight:800;
+
+    line-height:1.15;
+
+}
+
+@media(max-width:768px){
+
+.contact-hero{
+    min-height: 30px;
+    background-position:75% center;
+
+}
+
+.contact-hero h1{
+
+font-size:2.5rem;
+
+}
+
+}
+
 .contact-overview{
 
     padding:120px 0;
