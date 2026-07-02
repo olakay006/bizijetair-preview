@@ -614,7 +614,7 @@ section{
     border:none;
     height: 150px;
 }
-.stat-card h2, h3, h4{
+.stat-card .h2, .h3, .h4{
     background:#6D3EF5;
     box-shadow:0 15px 40px rgba(25,60,120,.08);
     border:none;
