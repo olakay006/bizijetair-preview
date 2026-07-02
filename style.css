@@ -6329,6 +6329,10 @@ font-size:2rem;
     color:#0d6efd;
 
 }
+.contact-info-card h3 {
+    color: #003b95;
+    background-color: transparent;
+}
 
 /*=========================
         CONTENT
